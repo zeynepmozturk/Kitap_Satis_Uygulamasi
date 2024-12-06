@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".KayitEkrani">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:background="@drawable/rounded_corner">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="16dp">
+
+                <EditText
+                    android:id="@+id/edtAd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:hint="Ad"
+                    android:padding="12dp"
+                    android:background="@drawable/edittext_bg"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/edtSoyad"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Soyad"
+                    android:padding="12dp"
+                    android:background="@drawable/edittext_bg"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtTelefon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="0(###) ###-####"
+                android:padding="12dp"
+                android:background="@drawable/edittext_bg"
+                android:textColor="#000000"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/edtMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Email"
+                android:padding="12dp"
+                android:background="@drawable/edittext_bg"
+                android:textColor="#000000"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Cinsiyet"
+                android:textSize="18sp"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:id="@+id/edtcinsiyet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:text="Kadın"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Erkek"
+                    android:textSize="16sp"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/edtParola"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:hint="Parola"
+                android:padding="12dp"
+                android:background="@drawable/edittext_bg"
+                android:textColor="#000000"
+                android:inputType="textPassword" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Üyelik Sözleşmesini ve KVKK - Açık Rıza Onay Metnini okudum, kabul ediyor ve onaylıyorum.*"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E-posta gönderimine izin ver"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnKaydet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#B66761"
+                android:text="Üyelik Oluştur"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:padding="12dp" />
+
+            <Button
+                android:id="@+id/btnKayitSorgula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#453845"
+                android:text="Kayıt Sorgula"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:padding="12dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

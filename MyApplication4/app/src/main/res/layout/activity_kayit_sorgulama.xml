@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kayitSorgulama">
+
+    <EditText
+        android:id="@+id/editTextSorgu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Arama yapmak için adı, doğum yeri veya cinsiyeti girin..."
+        android:padding="16dp"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonAra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextSorgu"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Ara" />
+
+    <ListView
+        android:id="@+id/listViewSonuclar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttonAra"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>

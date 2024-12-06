@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="3dp"
+    app:cardBackgroundColor="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_ad"
+                android:hint="Ad"
+                android:layout_width="match_parent"
+                android:textSize="18sp"
+                android:padding="4dp"
+                android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_Soyad"
+            android:hint="Soyad"
+            android:textSize="18sp"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_Telefon"
+            android:hint="Telefon"
+            android:textSize="18sp"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_Email"
+            android:hint="Email"
+            android:textSize="18sp"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_Cinsiyet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="4dp"
+                android:hint="Cinsiyet" />
+
+            <TextView
+                android:id="@+id/tv_Parola"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:textSize="18sp"
+                android:padding="4dp"
+                android:hint="Parola" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

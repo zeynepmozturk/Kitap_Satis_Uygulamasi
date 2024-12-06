@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="search_types">
+        <item>Adı</item>
+        <item>Doğum Yeri</item>
+        <item>Cinsiyet</item>
+    </string-array>
+</resources>
